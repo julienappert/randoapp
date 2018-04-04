@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Randobreizh</title>
+    <link rel="stylesheet" href="framework7/css/framework7.min.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+    <link rel="stylesheet" href="css/material-icons.css">
+    
+    <link rel="stylesheet" href="vendors/leaflet/leaflet.css">  
+    <link rel='stylesheet' href='vendors/fullscreen/leaflet.fullscreen.css'>	     
+    
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body onload="onLoad()" class="color-theme-grey">
+    <!-- App root element -->
+    <div id="app">
+    	
+    	<div class="panel panel-right panel-cover">
+		    <div class="view">
+		      <div class="page">
+		        <div class="navbar">
+		          <div class="navbar-inner">
+		            <div class="title">MENU</div>
+		          </div>
+		        </div>
+		        <div class="page-content">
+		        	<div class="block-title">Sur le site web</div>
+		          <div class="list links-list">
+		          	<ul>
+		          		<li>
+		          			<a class="link external" href="https://randobreizh.fr/agenda/">Agenda</a>
+		          		</li>
+		          		<li>
+		          			<a class="link external" href="https://randobreizh.fr/annuaire/">Annuaire</a>
+		          		</li>		          		
+		          		<li>
+		          			<a class="link external" href="https://randobreizh.fr/contact/">Contact</a>
+		          		</li>		          		
+		          	</ul>
+		          </div>
+		        </div>
+		      </div>
+		    </div>    		
+    	</div>
+    
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+			<div class="views tabs">
+		    <div id="view-home" class="view view-main tab tab-active"></div>
+		    <div id="view-randos" class="view tab"></div>      
+		    <div id="view-account" class="view tab"></div>
+		   </div>
+		   		   
+    </ddiv>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="framework7/js/framework7.min.js"></script>
+		  
+		<script type="text/javascript" src="vendors/leaflet/leaflet.js"></script>
+		<script type="text/javascript" src="vendors/togeojson.js"></script>		
+		<script type='text/javascript' src='vendors/proj4/proj4-compressed.js'></script>
+		<script type='text/javascript' src='vendors/proj4/proj4leaflet.js'></script>	 
+		<script type='text/javascript' src="vendors/fullscreen/Leaflet.fullscreen.min.js"></script>
+	
+		<script type="text/javascript" src="js/file.js"></script> 
+		<script type="text/javascript" src="js/map.js"></script>    
+		<script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

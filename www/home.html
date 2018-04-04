@@ -1,0 +1,102 @@
+<div data-name="home" class="page">
+
+  <!-- Top Navbar -->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="title"><img width="30" height="30" src="img/randobreizh-30.png"> Randobreizh</div>
+			<div class="right">
+      	<a href="#" class="link icon-only panel-open" data-panel="right">
+        	<i class="icon f7-icons ios-only">menu</i>
+          <i class="icon material-icons md-only">menu</i>
+        </a>
+      </div>            
+    </div>
+  </div>
+
+	<div class="toolbar toolbar-bottom-md">
+		<div class="toolbar-inner">
+			<a href="#view-home" class="tab-link tab-link-active">Accueil</a>
+			<a href="#view-randos" class="tab-link">Mes randos</a>
+			<a href="#view-account" class="tab-link">Mon compte</a>
+		</div>
+	</div>
+	
+	<div class="fab fab-right-bottom color-red">
+  	<a href="#" class="popup-open" data-popup=".popup-filter">
+			<i class="f7-icons ios-only">search</i>
+			<i class="material-icons md-only">search</i>  	
+  	</a>	
+  </div>	
+	
+	<div class="searchbar-backdrop"></div>
+  <div class="page-content">
+  	<div class="block-title"><h1>Balades et randonnées en Bretagne</h1></div>
+    <div class="block">
+    	<p><span id="nb_randos"></span> circuits</p>
+    </div>  	
+    <div class="list simple-list searchbar-not-found">
+      <ul>
+        <li>Rien trouvé</li>
+      </ul>
+    </div>
+    <div class="list virtual-list randos-list media-list searchbar-found">
+    </div>									
+	</div>	
+	
+  <div class="popup popup-filter">
+  	<div class="view">
+  		<div class="page">
+  			<div class="navbar">
+  				<div class="navbar-inner">
+  					<div class="title">Filtrer</div>
+						<div class="right">
+            	<a class="link popup-close">
+								<i class="f7-icons ios-only">close</i>
+								<i class="material-icons md-only">close</i>            	
+            	</a>
+         		</div>  					
+  				</div>
+  			</div>
+  			<div class="page-content">
+  			
+					<form class="list" id="form-filter">
+						<ul>
+							<li>
+								<div class="item-content item-input">
+									<div class="item-inner">
+										<div class="item-title item-label">Ville, point d'intérêt</div>
+										<div class="item-input-wrap">
+											<input type="text" id="depart" name="depart" autocomplete="off">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item-content item-input">
+									<div class="item-inner">
+										<div class="item-title item-label">Rayon tour</div>
+										<div class="item-input-wrap">
+											<select name="rayon">
+												<option value="5000">5km</option>
+												<option value="10000">10km</option>
+												<option value="20000">20km</option>
+												<option value="50000">50km</option>
+												<option value="10000">100km</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</li>							
+						</ul>
+					</form>   
+					<div class="block block-strong row">
+						<div class="col"><a class="button button-filter" href="#">Trouver des randonnées</a></div>
+					</div>   			
+  			
+  			</div>
+  		</div>
+  	</div> 
+      
+  </div>													
+
+</div>

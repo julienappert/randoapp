@@ -1,0 +1,50 @@
+<div data-name="single-rando" class="page">
+
+  <!-- Top Navbar -->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left">
+        <a class="link back icon-only">
+        	<i class="icon f7-icons ios-only">arrow_left</i>
+          <i class="icon material-icons md-only">arrow_back</i>          
+        </a>
+      </div>    
+      <div class="title"><img width="30" height="30" src="img/randobreizh-30.png"> Randobreizh</div>
+			<div class="right">
+      	<a href="#" class="link icon-only panel-open" data-panel="right">
+        	<i class="icon f7-icons ios-only">menu</i>
+          <i class="icon material-icons md-only">menu</i>
+        </a>
+      </div>      
+    </div>
+  </div>
+
+	<div class="toolbar toolbar-bottom-md">
+		<div class="toolbar-inner">
+			<a href="#view-home" class="tab-link tab-link-active">Accueil</a>
+			<a href="#view-randos" class="tab-link">Mes randos</a>
+			<a href="#view-account" class="tab-link">Mon compte</a>
+		</div>
+	</div>			
+	
+  <div id="single-rando" class="page-content">
+  	<div class="block-title"><h1>{{post_title}}</h1></div>
+  	<div><img class="thumbnail" src="{{thumbnail}}"></div>
+  	<div class="block">
+  		<p><button id="show-map" class="button button-fill color-red">Voir la carte</button></p>  
+  		<p><button id="save-rando" class="button button-fill color-green" data-id="{{ID}}">Sauvegarder le circuit</button></p> 
+  		<p><button id="saved-rando" disabled="disabled" class="button color-green button-outline">Circuit déjà sauvegardé !</button></p>  	
+  		<p>Lieu : {{location}}</p>
+  		<p>Distance : {{distance}}</p>
+  		<p>Type : {{ types}}</p>
+  		<div id="map" style="display:none"
+				data-gps="{{gps_file}}"
+				data-type="{{file_type}}"
+				data-projfr="{{projFr}}"
+				data-lat="{{lat}}"
+				data-lng="{{lng}}" > 
+  		</div>
+  	</div>										
+	</div>											
+
+</div>

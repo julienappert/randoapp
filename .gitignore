@@ -1,0 +1,12 @@
+
+hooks/
+
+node_modules/
+
+platforms/
+
+plugins/
+
+\.bithoundrc
+
+CONTRIBUTING\.md
